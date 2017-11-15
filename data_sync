@@ -1,14 +1,10 @@
 #!/bin/bash
 
-dnf -y install golang
-
-
 date_data=$(date "+%m/%d/%y%n")
 
-raiz=~/Dmetadata
+raiz=~/unitedrpms-appstream-data
 mkdir -p ${raiz}
 megacopy --local "${raiz}" --remote /Root/unitedrpms/metadata/ --download
-mkdir -p unitedrpms-appstream-data
 pushd ~/unitedrpms-appstream-data/
 git tag ${date_data}
 git push origin ${date_data}
