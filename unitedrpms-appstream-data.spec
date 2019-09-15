@@ -1,5 +1,5 @@
 Name:       unitedrpms-appstream-data
-Version:    2018.06.07
+Version:    2019.09.14
 Release:    1%{?dist}
 Summary:    Appstream metadata for the UnitedRPMs project repository
 BuildArch:  noarch
@@ -35,6 +35,9 @@ DESTDIR=%{buildroot} appstream-util install %{S:0} %{S:1}
 %dir %{_datadir}/app-info/xmls
 
 %changelog
+
+* Sat Sep 14 2019 David Vásquez <davidva AT tuta DOT io> - 2019.09.14-1
+- Updated to 2019.09.14
 
 * Wed Jun 27 2018 David Vásquez <davidva AT tuta DOT io> - 2018.06.07-1
 - Updated to 2018.06.07

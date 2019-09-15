@@ -4,3 +4,5 @@ RPMS/*
 SPECS/*
 SRPMS/*
 unitedrpms*.gz
+.directory
+*.rpm
